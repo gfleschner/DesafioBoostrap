@@ -1,2 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+.contenedor{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "header header"
+                         "main main"
+                         "main main"
+                         "footer footer";
+}
+
+.header{
+    grid-area: header;    
+    background-color: #9DDE24;
+    text-align: center;
+    padding: 1.2rem 1.9rem;
+    color: black;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 1.5rem;   
+
+}
+
+h1{
+    border-bottom: 0.2rem solid #584502;
+}
+
+.main{
+    grid-area: main;
+    background-color: #9DDE24;
+
+    /* imagen de fondo index.
+    background-image: url(/multimedia/fondoHome.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; */    
+    
+}
+
+.menu{
+    padding: 0.5rem 0.6rem;    
+    position: sticky;
+    top: 0;    
+    text-align: center;            
+    background-color: #5DA902;    
+    border: 0.1rem solid black;
+    font-size: 1rem;
+    font-family: 'Sedgwick Ave Display', cursive;
+        
+    
+}
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+.menu li{
+    margin: 0.2rem 1rem;    
+    padding: 0.4rem;    
+    border: 0.1rem solid black;
+    border-radius: 0.8rem;
+    text-align: center;          
+    
+}
+
+.menu li:hover{
+    background-color: #9DDE24;
+    transform: scale(1.2);
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;   
+    
+}
+
+
+.section{
+    margin: 1.2rem;
+    padding: 1.2rem 1.8rem;    
+    text-align: center;        
+    font-size: 1.2rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;    
+    
+}
+
+.section h2{
+    padding: 1.2rem 1.2rem 3.1rem 1.2rem;
+    
+}
+
+.section h3{
+    padding: 0.7rem 2.6rem;
+}
+
+.section p{
+    padding: 1rem 3.1rem;
+    margin: 0.2rem 0.7rem;
+}
+
+.section a{
+    text-decoration: none;
+    color: #9DDE24;
+    border: 0.1rem solid black;
+    border-radius: 0.3rem;
+    background-color: #084010;
+    font-size: 1rem;
+}
+
+section div a:hover{
+    background-color: #11691d;
+    transform: scale(1.2);
+    box-shadow: 0.2rem 0.2rem #084010;
+}
+
+
+.section form{
+    display: inline-block;
+    text-align: left;
+    font-size: 1rem;
+    background-color:#abe244;
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;       
+    font-size: 0.8rem;
+    padding: 1rem 0.6rem;
+    background-color: #084010;
+    text-align: center;
+    color: #D5E5D7;
+    border: 0.1rem solid black;
+    font-family: 'Poppins', sans-serif;
+        
+}
+
+.footer div h3, h4, h5{
+    margin-top: 1rem;
+    padding: 0.2rem;
+    font-size: 1rem;
+}
+
+
+
+footer div img{
+    margin: 1.2rem 0.5rem;
+    border-radius: 50%;
+}
+
+/* media queries */
+
+@media only screen and (max-width:600px){
+
+    .header{
+        font-size: 75%;
+    }
+
+    .menu{
+        font-size: 75%;
+    }
+
+    .section{
+        font-size: 75%;
+    }
+
+    
+    .footer div h3, h4, h5{
+        font-size: 75%;
+    }   
+
+
+    .escudo{
+        width: 50%;
+    }
+
+    .redes{
+        width: 15%;
+    }
+
+    .video{
+        max-width: 80%;
+        min-width: 10%;
+    }    
+  
+    
+   
+}
+
+@media only screen and (max-width:360px){
+
+    .header{
+        font-size: 50%;
+    }
+
+    .menu{
+        font-size: 50%;
+    }
+
+    .section{
+        font-size: 50%;
+    }
+
+    .footer{
+        display: block;
+    }
+
+    .footer div h3, h4, h5{
+        font-size: 50%;
+    }
+    
+    .escudo{
+        width: 15%;
+    }
+
+    .redes{
+        width: 5%;
+    }
+
+    .video{
+        max-width: 50%;
+        min-width: 10%;
+    }
 
